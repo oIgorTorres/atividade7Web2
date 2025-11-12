@@ -66,4 +66,9 @@
         box-sizing: border-box;
         margin-bottom: 20px;
     }
+
+     #voltar{
+            display: flex;
+            padding-top: 25px;
+        }
    

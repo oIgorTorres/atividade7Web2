@@ -49,6 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+     <a id="voltar" href="/atividade7Web2/index.php"><strong> Voltar </strong> </a>
 </div>
 
 </body>

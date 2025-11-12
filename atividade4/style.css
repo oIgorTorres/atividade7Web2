@@ -56,4 +56,9 @@
         background-color: #0056b3;
     }
 
+     #voltar{
+            display: flex;
+            padding-top: 25px;
+        }
+
    

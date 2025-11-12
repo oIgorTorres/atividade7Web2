@@ -12,12 +12,12 @@ class Pedido {
         $this->tipoCliente = strtolower($tipoCliente);
     }
 
-    // Retorna o total bruto (sem desconto nem imposto)
+    
     public function calcularTotalBruto(): float {
         return $this->quantidade * $this->precoUnitario;
     }
 
-    // Retorna o valor do desconto
+   
     public function calcularDesconto(): float {
         $totalBruto = $this->calcularTotalBruto();
         if ($this->tipoCliente === 'premium') {
@@ -26,13 +26,13 @@ class Pedido {
         return 0;
     }
 
-    // Retorna o valor do imposto
+   
     public function calcularImposto(): float {
         $totalBruto = $this->calcularTotalBruto();
         return $totalBruto * 0.08; // 8% de imposto
     }
 
-    // Retorna o total final (considerando desconto e imposto)
+    
     public function calcularTotalFinal(): float {
         $totalBruto = $this->calcularTotalBruto();
         $desconto = $this->calcularDesconto();
@@ -40,7 +40,7 @@ class Pedido {
         return $totalBruto - $desconto + $imposto;
     }
 
-    // Retorna um resumo legível do pedido
+   
     public function getResumo(): string {
         return "
         <ul>

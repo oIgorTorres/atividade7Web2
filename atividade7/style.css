@@ -56,4 +56,13 @@
         background-color: #0056b3;
     }
 
+    div{
+        margin-top: auto;
+    }
+
+     #voltar{
+            display: flex;
+            padding-top: 25px;
+        }
+
    

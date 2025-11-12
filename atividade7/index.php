@@ -11,7 +11,7 @@
 
 
 <div>
-<h2>Informações da Viagem</h2>
+<h1>Informações da Viagem</h1>
 
 <form method="post">
     <label>Origem: <input type="text" name="origem" required></label><br><br>
@@ -55,6 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+     <a id="voltar" href="/atividade7Web2/index.php"><strong> Voltar </strong> </a>
 </div>
 
 </body>
